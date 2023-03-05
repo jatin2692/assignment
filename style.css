@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap');
+
+/* Colors */
+:root {
+    --color-primary: aqua;
+    --color-secondary: white;
+}
+
+/* Bootstrap helper classes */
+.btn-main {
+    background-color: var(--color-primary) !important;
+    color: var(--color-secondary) !important;
+    border-color: var(--color-primary) !important;
+}
+
+.btn-transparent {
+    background-color: transparent;
+    border-color: white !important;
+    color: white !important;
+}
+
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+li > a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+.banner-content {
+    color: var(--color-secondary);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    z-index: 2;
+}
+
+.carousel {
+    height: 600px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 100% 82%, 50% 68%, 8% 80%, 0% 82%);
+    position: relative;
+}
+
+.carousel-inner, .carousel-item {
+    height: 100%;
+    background-image: url('./assets/image1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-item {
+    filter: brightness(0.5);
+}
+
+.carousel-item:nth-child(2) {
+    background-image: url('./assets/image2.jpg');
+}
+
+.carousel-item:nth-child(3) {
+    background-image: url('./assets/image3.jpg');
+}
+
+.triangle {
+    border-width: 0 50px 50px 50px;
+    border-color: transparent transparent #FFF transparent;
+}
+
+.section-1 {
+    position: relative;
+    background-color: #f8f8f8;
+}
+
+.section-1 > .go-down {
+    position: absolute;
+    bottom: 33%;
+    margin: 0 auto;
+    left: 50%;
+    font-size: 2em;
+}
+
+.go-down {
+    text-decoration: none;
+    color: black;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.section-1__promotion {
+}
+
+.section-1__promotion__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-1__promotion__card > img {
+    width: 64px;
+}
+
+.section-1__promotion__card > p {
+    font-size: 0.75em;
+    text-align: center;
+}
+
+.section {
+    padding: 2em 5em;
+}
